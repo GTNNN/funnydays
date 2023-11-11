@@ -5,7 +5,6 @@ import HeadSEO from '../components/HeadSEO.astro'
 // import Footer from '../components/Footer.astro'
 import AstroLogo from '../components/Header/AstroLogo.astro'
 import LeftSidebar from '../components/LeftSidebar.astro'
-import Audio from '../components/Audio.astro'
 import { SITE } from '@/config'
 import { parseTitle, sortPosts, getIndex } from '@/util'
 
@@ -181,7 +180,7 @@ if (postIndex < allPosts.length) {
 	</head>
 	<body>
 		<main class='layout'>
-      <audio src="/music/1-bgm.MP3" autoplay loop></audio>
+			<audio src='/music/1-bgm.MP3' autoplay loop></audio>
 			<aside id='grid-left' class='grid-sidebar' title='Site Navigation'>
 				<LeftSidebar currentPage={currentPage} />
 			</aside>
@@ -197,14 +196,14 @@ if (postIndex < allPosts.length) {
 						{title}
 					</h1>
 					<slot />
-					<div class='flex align-middle justify-center mt-4'>
+					<!-- <div class='flex align-middle justify-center mt-4'>
 						<a
 							class='inline-block h-10 items-center rounded bg-[#262626] px-5 py-3 text-sm font-medium text-white pay-button'
 							href='https://www.wolai.com/gaodian/2m4d5D14wAWih5Mak82LJs'
 							target='_blank'
 							rel='noreferrer'>❤️ 不错 👉 去主页瞅瞅 ❤️</a
 						>
-					</div>
+					</div> -->
 					<hr />
 					<div
 						class='flex justify-between md:flex-row flex-col mt-2 post-footer'
